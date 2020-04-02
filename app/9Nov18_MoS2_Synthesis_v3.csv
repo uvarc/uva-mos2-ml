@@ -1,0 +1,66 @@
+Title,CVD_type,Mo_precursor,S_precursor,substrate,thickness_coverage,distance_btwn_MoS2_Raman_peaks,Mo_T,S_T,Highest_growth_T,Growth_Time,Growth_P,Class_Label_for_ML
+All Chemical Vapor Deposition Growth of MoS2-h-BN Vertical van der Waals Heterostructures,double vapor,MoO3 powder,S powder,h-BN,monolayer,20.5,300,180,800,55,760,yes
+All Chemical Vapor Deposition Growth of MoS2-h-BN Vertical van der Waals Heterostructures,double vapor,MoO3 powder,S powder,SiO2,monolayer,20.5,300,180,800,55,760,yes
+Ambipolar Light-Emitting Transistors on Chemical Vapor Deposited Monolayer MoS2,double vapor,MoO3 powder,S powder,sapphire,monolayer,20.2,700,250,700,200,760,yes
+High mobility top gated field-effect transistors and integrated circuits based on chemical vapor deposition-derived monolayer MoS2,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,18,830,180,830,15,760,yes
+Point Defects and Grain Boundaries in Rotationally Commensurate MoS2 on Epitaxial Graphene,double vapor,MoO3 powder,S powder,graphene,monolayer,20.6,800,120,800,15,40,yes
+Scalable Growth of High-Quality Polycrystalline MoS2 Monolayers on SiO2 with Tunable Grain Sizes,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,none,540,130,750,25,0.67,yes
+Scalable Growth of High-Quality Polycrystalline MoS2 Monolayers on SiO2 with Tunable Grain Sizes,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,19.8,540,130,750,50,0.67,yes
+Strongly enhanced photoluminescence in nanostructured monolayer MoS2 by chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,20,700,150,700,8,760,yes
+Substrate control for large area continuous films of monolayer MoS2 by atmospheric pressure chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,20.9,400,200,800,30,760,yes
+Shape Evolution of Monolayer MoS2 Crystals Grown by Chemical Vapor Deposition,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,20.3,700,150,700,30,760,yes
+Role of the Seeding Promoter in MoS2 Growth by Chemical Vapor Deposition,double vapor,MoO3 powder,S powder,Au (100 nm),monolayer,20,650,180,650,3,760,yes
+Role of the Seeding Promoter in MoS2 Growth by Chemical Vapor Deposition,double vapor,MoO3 powder,S powder,graphene,monolayer,25,650,180,650,3,760,yes
+Role of the Seeding Promoter in MoS2 Growth by Chemical Vapor Deposition,double vapor,MoO3 powder,S powder,h-BN,monolayer,21,650,180,650,3,760,yes
+Large-Scale Synthesis of a Uniform Film of Bilayer MoS2 on Graphene for 2D Heterostructure Phototransistors,double vapor,MoO3 powder,S powder,graphene,bilayer,22.4,650,145,650,10,0.75,no
+Large-Scale Synthesis of a Uniform Film of Bilayer MoS2 on Graphene for 2D Heterostructure Phototransistors,double vapor,MoO3 powder,S powder,SiO2/Si,bilayer,22,650,145,650,10,1,no
+Controlled synthesis and optical properties of polycrystalline molybdenum disulfide atomic layers grown by chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,bilayer,22,700,120,700,60,0.02,no
+Controlled synthesis and optical properties of polycrystalline molybdenum disulfide atomic layers grown by chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,19.5,650,120,650,60,0.02,yes
+Controlled synthesis and optical properties of polycrystalline molybdenum disulfide atomic layers grown by chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,multilayer,none,850,120,850,60,0.02,no
+Controlled synthesis and optical properties of polycrystalline molybdenum disulfide atomic layers grown by chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,multilayer,none,850,120,750,60,0.02,no
+Controlled synthesis and optical properties of polycrystalline molybdenum disulfide atomic layers grown by chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,no layers,none,700,120,600,60,0.02,no
+"CVD GROWTH and CHARACTERIZATION OF 2D TRANSITION METAL DICHALCOGENIDES, MoS2 and WS2",double vapor,MoO3 powder,S powder,SiO2/Si,bilayer,22.2,700,150,700,3,760,no
+E� Raman Mode in Thermal Strain-Fractured CVD-MoS2,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,20.4,720,200,720,20,760,yes
+Multilayered MoS2 nanoflakes bound to carbon nanotubes as electron acceptors in bulk heterojunction inverted organic solar cells,double vapor,MoO3 powder,S powder,CNTs on SiO2/Si,multilayer,18,650,250,850,240,760,no
+Synthesis of MoS2 ribbons and their branched structures by chemical vapor deposition in sulfur-enriched environment,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,21.5,750,180,750,30,760,yes
+Ultrathin quartz plate-based multilayer MoS2 for passively mode-locked fiber lasers,double vapor,MoO3 powder,S powder,quartz,multilayer,24.7,550,100,550,30,0.1,no
+Influence of Stoichiometry on the Optical and Electrical Properties of Chemical Vapor Deposition Derived MoS2,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,20.6,800,150,800,3,150,yes
+Influence of Stoichiometry on the Optical and Electrical Properties of Chemical Vapor Deposition Derived MoS2,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,20.6,800,150,800,10,150,yes
+Influence of Stoichiometry on the Optical and Electrical Properties of Chemical Vapor Deposition Derived MoS2,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,20.6,800,170,800,10,150,yes
+Synthesis of Large-Area MoS2�Atomic Layers with Chemical Vapor Deposition,double vapor,MoO3 powder,S powder,SiO2/Si,multilayer,none,650,650,650,15,760,no
+Role of the carrier gas flow rate in monolayer MoS2 growth by modified chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,21,730,145,730,47,760,yes
+Role of the carrier gas flow rate in monolayer MoS2 growth by modified chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,21,730,145,730,52,760,yes
+Role of the carrier gas flow rate in monolayer MoS2 growth by modified chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,21,730,145,730,57,760,yes
+Role of the carrier gas flow rate in monolayer MoS2 growth by modified chemical vapor deposition,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,21,730,145,730,62,760,yes
+Pressure-dependent large area synthesis and electronic structure of MoS2,double vapor,MoO3 powder,S powder,SiO2/Si,multilayer,29,850,145,850,200,37.5,no
+Pressure-dependent large area synthesis and electronic structure of MoS2,double vapor,MoO3 powder,S powder,SiO2/Si,multilayer,31.4,850,145,850,200,75,no
+Pressure-dependent large area synthesis and electronic structure of MoS2,double vapor,MoO3 powder,S powder,SiO2/Si,no layers,none,850,145,850,200,7.5,no
+Unveiling the Growth Mechanism of MoS2 with Chemical Vapor Deposition: From Two-Dimensional Planar Nucleation to Self-Seeding Nucleation,double vapor,MoO3 powder,S powder,SiO2/Si,none,none,700,180,700,60,760,no
+Unveiling the Growth Mechanism of MoS2 with Chemical Vapor Deposition: From Two-Dimensional Planar Nucleation to Self-Seeding Nucleation,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,19.9,725,180,725,60,760,yes
+Unveiling the Growth Mechanism of MoS2 with Chemical Vapor Deposition: From Two-Dimensional Planar Nucleation to Self-Seeding Nucleation,double vapor,MoO3 powder,S powder,SiO2/Si,monolayer,20.1,750,180,750,60,760,yes
+Unveiling the Growth Mechanism of MoS2 with Chemical Vapor Deposition: From Two-Dimensional Planar Nucleation to Self-Seeding Nucleation,double vapor,MoO3 powder,S powder,SiO2/Si,multilayer,21.3,775,180,775,60,760,no
+Unveiling the Growth Mechanism of MoS2 with Chemical Vapor Deposition: From Two-Dimensional Planar Nucleation to Self-Seeding Nucleation,double vapor,MoO3 powder,S powder,SiO2/Si,multilayer,21.5,800,180,800,60,760,no
+Unveiling the Growth Mechanism of MoS2 with Chemical Vapor Deposition: From Two-Dimensional Planar Nucleation to Self-Seeding Nucleation,double vapor,MoO3 powder,S powder,SiO2/Si,multilayer,23.5,850,180,850,60,760,no
+Epitaxial Monolayer MoS2 on Mica with Novel Photoluminescence,double vapor,MoO3 powder,S powder,mica,monolayer,none,530,100,700,20,0.225,yes
+Epitaxial Monolayer MoS2 on Mica with Novel Photoluminescence,double vapor,MoO3 powder,S powder,mica,no layers,none,500,100,700,45,0.225,no
+Epitaxial Monolayer MoS2 on Mica with Novel Photoluminescence,double vapor,MoO3 powder,S powder,mica,no layers,none,600,100,700,45,0.225,no
+Epitaxial Monolayer MoS2 on Mica with Novel Photoluminescence,double vapor,MoO3 powder,S powder,mica,multilayer,none,530,100,700,120,0.225,no
+Epitaxial Monolayer MoS2 on Mica with Novel Photoluminescence,double vapor,MoO3 powder,S powder,mica,monolayer,20,530,100,700,35,0.225,yes
+Controllable Growth and Transfer of Monolayer MoS2�on Au Foils and Its Potential Application in Hydrogen Evolution Reaction,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,530,30,0.225,yes
+Controllable Growth and Transfer of Monolayer MoS2�on Au Foils and Its Potential Application in Hydrogen Evolution Reaction,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,610,30,0.225,yes
+Controllable Growth and Transfer of Monolayer MoS2�on Au Foils and Its Potential Application in Hydrogen Evolution Reaction,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,680,30,0.225,yes
+Controllable Growth and Transfer of Monolayer MoS2�on Au Foils and Its Potential Application in Hydrogen Evolution Reaction,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,750,30,0.225,yes
+"Dendritic, Transferable, Strictly Monolayer MoS2 Flakes Synthesized on SrTiO3 Single Crystals for Efficient Electrocatalytic Applications",double vapor,MoO3 powder,S powder,SrTiO3,monolayer,18.3,530,100,880,60,0.225,yes
+Monolayer MoS 2 Growth on Au Foils and On-Site Domain Boundary Imaging,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,680,60,0.124,yes
+"Large-Area, Transfer-Free, Oxide-Assisted Synthesis of Hexagonal Boron Nitride Films and Their Heterostructures with MoS2 and WS2",double vapor,MoO3 powder,S powder,h-BN,multilayer,25.9,800,250,800,30,10,no
+"Large-Area, Transfer-Free, Oxide-Assisted Synthesis of Hexagonal Boron Nitride Films and Their Heterostructures with MoS2 and WS2",double vapor,MoO3 powder,S powder,h-BN,multilayer,25.9,800,250,800,60,10,no
+Unravelling Orientation Distribution and Merging Behavior of Monolayer MoS2 Domains on Sapphire,double vapor,MoO3 powder,S powder,sapphire,monolayer,20,530,100,850,60,0.225,yes
+Unravelling Orientation Distribution and Merging Behavior of Monolayer MoS2 Domains on Sapphire,double vapor,MoO3 powder,S powder,sapphire,monolayer,20,530,100,830,60,0.225,yes
+Unravelling Orientation Distribution and Merging Behavior of Monolayer MoS2 Domains on Sapphire,double vapor,MoO3 powder,S powder,sapphire,monolayer,20,530,100,850,10,0.225,yes
+Unravelling Orientation Distribution and Merging Behavior of Monolayer MoS2 Domains on Sapphire,double vapor,MoO3 powder,S powder,sapphire,monolayer,20,530,100,830,10,0.225,yes
+Oxygen-Assisted Chemical Vapor Deposition Growth of Large SingleCrystal and High-Quality Monolayer MoS2,double vapor,MoO3 powder,S powder,SiO2,multilayer,24.8,530,115,850,30,0.5,no
+Substrate Facet Effect on the Growth of Monolayer MoS2 on Au Foils,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,530,60,0.225,yes
+Substrate Facet Effect on the Growth of Monolayer MoS2 on Au Foils,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,610,60,0.225,yes
+Substrate Facet Effect on the Growth of Monolayer MoS2 on Au Foils,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,680,60,0.225,yes
+Substrate Facet Effect on the Growth of Monolayer MoS2 on Au Foils,double vapor,MoO3 powder,S powder,Au foils,monolayer,19.9,530,102,750,60,0.225,yes
+Large-Scale Synthesis of a Uniform Film of Bilayer MoS2 on Graphene for 2D Heterostructure Phototransistors,double vapor,MoO3 powder,S powder,SiO2/Si,bilayer,22.4,650,145,650,10,1,no
