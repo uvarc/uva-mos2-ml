@@ -33,8 +33,7 @@ EXPOSE 80
 # Copy further configuration files into the Docker image
 COPY shiny-server.sh /usr/bin/shiny-server.sh
 
-RUN groupadd  shiny \
-&& useradd --gid shiny --shell /bin/bash --create-home shiny
-RUN chmod shiny:shiny /usr/bin/shiny-server.sh
+# RUN useradd --gid shiny --shell /usr/bin/bash --create-home shiny
+RUN chown shiny.shiny /usr/bin/shiny-server.sh && chmod 755 /usr/bin/shiny-server.sh
 
 CMD ["/usr/bin/shiny-server.sh"]
