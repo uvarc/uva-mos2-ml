@@ -1,0 +1,32 @@
+branches:
+  only:
+  - master
+  - release
+
+language: bash
+
+services:
+  - docker
+
+before_install:
+  - sudo pip install --upgrade pip
+  - pip install --user awscli
+  - export PATH=$PATH:$HOME/.local/bin
+  - echo $DOCKER_PASSWORD | docker login -u "$DOCKER_USERNAME" --password-stdin 
+
+install:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker build --no-cache -t uvarc/uva-mos2-ml:latest . || exit 1;
+    docker push uvarc/uva-mos2-ml:latest || exit 1;
+    fi
+  - if [ "$TRAVIS_BRANCH" == "release" ]; then
+    docker build --no-cache -t uvarc/uva-mos2-ml:release . || exit 1;
+    docker push uvarc/uva-mos2-ml:release || exit 1;
+    fi
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+    recipients:
+    - nem2p@virginia.edu
