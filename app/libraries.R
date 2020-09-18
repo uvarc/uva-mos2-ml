@@ -13,7 +13,7 @@ library(shinyjs)
 library(DT)
 library(class)
 library(parcoords)
-#library(knnGarden)
+library(knnGarden)
 library(caret)
 library(plotly)
 
