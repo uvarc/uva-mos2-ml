@@ -11,6 +11,11 @@ library(leaps) # for subset selection
 library(randomForest)
 library(shinyjs)
 library(DT)
+library(class)
+library(parcoords)
+#library(knnGarden)
+library(caret)
+library(plotly)
 
 # # # # # # # # # # # # # # # # # # LIBRARIES # # # # # # # # # # # # # # # # # # # # # # #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
