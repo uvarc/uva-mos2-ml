@@ -11,7 +11,14 @@ RUN apt-get update && apt-get install -y \
     libcairo2-dev/unstable \
     libxt-dev \
     libssl-dev \
-    libxml2-dev
+    libxml2-dev \
+    libnlopt-dev \
+    libudunits2-dev \
+    libgeos-dev \
+    libfreetype6-dev \
+    libpng-dev \
+    libtiff5-dev \
+    libjpeg-dev
 
 # Download and install ShinyServer (latest version)
 RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt" && \
@@ -22,7 +29,7 @@ RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubu
 
 # Install R packages that are required
 # TODO: add further package if you need!
-RUN R -e "install.packages(c('rlang', 'ggplot2','matrixStats','e1071','boot','leaps','randomForest','devtools','DT', 'plotly', 'caret', 'class', 'parcoords'), repos='http://cran.rstudio.com/', dependencies=TRUE)"
+RUN R -e "install.packages(c('ROCR', 'latticeExtra', 'rlang', 'ggplot2','matrixStats','e1071','boot','leaps','randomForest','devtools','DT', 'plotly', 'caret', 'class', 'parcoords'), repos='http://cran.rstudio.com/', dependencies=TRUE)"
 
 RUN R -e "devtools::install_version('shiny', version = '1.4.0.2', upgrade = FALSE)"
 RUN R -e "devtools::install_version('shinydashboard', version = '0.7.1', upgrade = FALSE)"
