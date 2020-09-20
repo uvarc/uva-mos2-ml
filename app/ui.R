@@ -3,6 +3,7 @@
 #
 # http://shiny.rstudio.com
 #
+#setwd("/home/prasanna/Dropbox/GIT_RSHINY/UVA_MoS2_CVD/uva-mos2-ml/app/")
 
 source("data.R")
 source("libraries.R")
@@ -29,8 +30,6 @@ tags$br()
 #column(6, tabsetPanel(type = "tabs", 
 ),
 fluidRow(
-#   column(4, tags$h4("Acknowledgments"), tags$img(height = 50, width = 50, 
-#  src = "wordcloud.jpeg")),
 column(12, tags$h4("Thank you for visiting our site. 
                    We will continue to update.")),
 column(12, tags$h4("Contact Us"), "If there are questions, send an email to Prasanna V. Balachandran (pvb5e at virginia dot edu). Updates to this website were in part due to P. Delsa"),
@@ -45,10 +44,11 @@ column(10,
 tags$br(),
 tags$h4("The dataset used in the MoS2 machine learning work"),
 tags$h4("The training dataset is shown below"),
-#dataTableOutput("MoS2_table")
 DTOutput(outputId = "MoS2_table")
 ))
 ),
+
+#Main panel shows predictions from Random Forest, k-NN, and SVM, depending on which methods are chosen
 tabPanel("Predictions",
 fluidRow(
 column(12, 
@@ -70,7 +70,7 @@ sliderInput(inputId = "Growth_P", label = "Growth Pressure",
             value = 0.02, min = 0.02, max = 760)
 ),
 mainPanel(
-checkboxGroupInput('updateconcentration', 'Select machine learning method(s)', choices = c("Random Forest", "k-NN"), inline = T),
+checkboxGroupInput('updateconcentration', 'Select machine learning method(s)', choices = c("Random Forest", "k-NN", "SVM"), inline = T),
 tags$h5("After having chosen a CVD growth condition and machine learning method(s), please hit the button below. "),
 actionButton(inputId = "getprobs", label = "Predict MoS2 Monolayer Formation Probability"),
 tags$br(),
@@ -84,13 +84,14 @@ tags$br(),
 tags$h5("The probability of forming MoS2 Monolayer based on the predictions from ML methods(s) is given below:"),
 fluidRow(
 column(4, tableOutput("concentrationvalues")),
+tags$br(),
 column(4, tableOutput("valtable"), offset = 2)
 ))
 )
 )
 )),
 
-#mainPanelbelow shows selected concentration values
+#Main panel shows parallel coordinate plots, grouped by selected value or shows papers selected
 tabPanel("Parallel Plots",
 tabsetPanel(type="tabs",
 tabPanel("Plots",
@@ -113,10 +114,10 @@ tagList(
 )
 ))
 ),
-tabPanel("Help", includeMarkdown("ParcoordsReadMe.rmd"))
+tabPanel("Help", includeMarkdown("ParcoordsReadMe.Rmd"))
 )
 ),
-
+#Main panel shows growth maps of data based on predictions from Random Forest and SVM model
 tabPanel("Growth Maps",
 fluidRow(
 tags$br(),
@@ -127,7 +128,7 @@ sidebarPanel(
 tags$h5("Growth map based on predictions from random forest model"),
 tags$br(),
 sliderInput(inputId = "gr_S_T", label = "S Precursor Temperature",
-           value = 145, min = 100, max = 325),
+           value = 145, min = 100, max = 250),
 sliderInput(inputId = "gr_Highest_growth_T", label = "Highest Growth Temperature",
            value = 730, min = 530, max = 880),
 sliderInput(inputId = "gr_Growth_Time", label = "Growth Time",
@@ -136,19 +137,16 @@ actionButton("gr_map", "Adjust Growth Map")
 ),
 mainPanel(
 tagList(
- plotlyOutput("plot1")
+ plotlyOutput("plot.rf"),
+ tags$br(),
+ plotlyOutput("plot.svm")
 )
 )))),
 
 tabPanel("Background Information", includeMarkdown("BackgroundInfo.Rmd")) 
 
 )
-#tabPanel("Help")
 )
 
 )
 )))
-
-#tags$h6("Probability value less than 0.4 indicates low confidence in forming monolayers.")
-#tags$h6("Probability value greater than 0.6 indicates high confidence in forming monolayers.")
-#tags$h6("Probability value between 0.4 and 0.6 indicates uncertainty in the model predictions.")

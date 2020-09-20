@@ -14,4 +14,4 @@ The random forest model used for predictions uses *ntree* = 1573 and *mtry* = 2,
 
 The k-Nearest Neighbors (k-NN) model uses the canberra distance metric opposed to the traditional euclidean or manhattan metrics. The k value yielding the best results was k=2. 
 
-<img src="/home/prasanna/Dropbox/GIT_RSHINY/UVA_MoS2_CVD/uva-mos2-ml/app/Rplot.png" width = "100%" height = "100%" />
+<img src="Rplot.png" width = "100%" height = "100%" />

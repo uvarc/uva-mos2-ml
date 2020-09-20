@@ -1,0 +1,31 @@
+---
+fig_width: 6
+---
+
+## How to Utilize the Parallel Coordinates Plot
+
+A parallel coordinates plot is a useful tool for visualizing data of multiple dimensions. The CRAN package "parcoords"' allows the user to interact with the plots, maximizing data interpretation. Listed below are various ways to fully utilize the parallel coordinates plot.
+
+<img src="BasePlot.png" width = "100%" height = "100%"/>
+
+
+--- 
+
+### **Adjust Data Grouping**
+
+Using the option in the sidebar, select how you would like the data to be grouped. The preset is for class label, with the blue line representing the set of conditions that **form** an MoS2 compound and the orange lines representing the set of conditions that **do not form** an MoS2 compound. For each method of grouping, each unique value is assigned a color (e.g., when "substrate" is selected, each of the substrates will be identified by a unique color).
+
+<img src="SubstratePlot.png" width = "100%" height = "100%"/>
+
+
+### **Moving Plot Axes**
+
+To move the axes and rearrange the plot, grab the axis title and move to where you would like.
+
+<img src="ReorganizePlot.png" width = "100%" height = "100%"/>
+
+### **Highlight Certain Areas of Each Axis**
+
+You can highlight certain areas of each axis by selecting a specific area of the axis, with only the data within the highlighted area showing. You can highlight areas on multiple axes. For example, if you wanted to see only the data with a substrate of mica that does form, you could highlight the area on the substrate axis for mice and the area on the class label for yes. 
+
+<img src="HighlightPlot.png" width = "100%" height = "100%"/>
