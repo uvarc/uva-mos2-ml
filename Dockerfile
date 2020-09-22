@@ -21,12 +21,14 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     libgdal-dev
 
+
 # Download and install ShinyServer (latest version)
 RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt" && \
     VERSION=$(cat version.txt)  && \
     wget --no-verbose "https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb && \
     gdebi -n ss-latest.deb && \
     rm -f version.txt ss-latest.deb
+
 
 # Install R packages that are required
 # TODO: add further package if you need!
@@ -41,6 +43,11 @@ RUN R -e "install.packages(c('rlang', 'ggplot2','matrixStats','e1071','boot','le
 RUN R -e "devtools::install_version('shiny', version = '1.4.0.2', upgrade = FALSE)"
 RUN R -e "devtools::install_version('shinydashboard', version = '0.7.1', upgrade = FALSE)"
 RUN R -e "devtools::install_version('shinyjs', version = '1.1', upgrade = FALSE)"
+
+# Install knnGarden
+COPY knnGarden_1.0.1.tar.gz /tmp
+RUN R -e "install.packages('/tmp/knnGarden_1.0.1.tar.gz', repos = NULL, type='source')"
+RUN rm /tmp/knnGarden_1.0.1.tar.gz
 
 # Copy configuration files into the Docker image
 COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
