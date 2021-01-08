@@ -6,7 +6,7 @@ on:
     - 'master'
 
 jobs:
-  Build-Master:
+  master:
     runs-on: ubuntu-latest
     steps:
       -
