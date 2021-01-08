@@ -7,7 +7,7 @@ on:
     - 'release'
 
 jobs:
-  Build:
+  Build-Master:
     runs-on: ubuntu-latest
     steps:
       - uses: nelonoel/branch-name@v1
@@ -35,8 +35,30 @@ jobs:
           push: true
           tags: uvarc/uva-mos2-ml:latest
       -
-        name: Build and push RELEASE
-        if: ${BRANCH_NAME} == 'RELEASE'
+        name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
+  Build-Release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: nelonoel/branch-name@v1
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+      - run: echo ${BRANCH_NAME}
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - 
+        name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      -
+        name: Build and push MASTER
+        if: ${BRANCH_NAME} == 'release'
         id: docker_build
         uses: docker/build-push-action@v2
         with:
@@ -47,8 +69,8 @@ jobs:
         run: echo ${{ steps.docker_build.outputs.digest }}
   DCOS-Deployment:
     runs-on: ubuntu-latest
-    if: (${{ success() }}) && (${BRANCH_NAME} == 'RELEASE')
-    needs: Build
+    if: ${{ success() }}
+    needs: Build-Release
     steps:
       -
         name: Install awscli
