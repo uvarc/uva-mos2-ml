@@ -10,8 +10,7 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - name: Get BRANCH
-        uses: nelonoel/branch-name@v1
+      - uses: nelonoel/branch-name@v1
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       - run: echo ${BRANCH_NAME}
