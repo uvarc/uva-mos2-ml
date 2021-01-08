@@ -14,7 +14,6 @@ jobs:
         uses: nelonoel/branch-name@v1
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-        run: echo ${BRANCH_NAME}
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
