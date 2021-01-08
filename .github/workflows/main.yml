@@ -9,11 +9,8 @@ on:
 jobs:
   Build-Master:
     runs-on: ubuntu-latest
+    if: contains(github.ref, "master")
     steps:
-      - uses: nelonoel/branch-name@v1
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-      - run: echo ${BRANCH_NAME}
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -28,7 +25,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and push MASTER
-        if: (${BRANCH_NAME} == 'master')
         id: docker_build
         uses: docker/build-push-action@v2
         with:
@@ -39,6 +35,7 @@ jobs:
         run: echo ${{ steps.docker_build.outputs.digest }}
   Build-Release:
     runs-on: ubuntu-latest
+    if: contains(github.ref, "release")
     steps:
       - uses: nelonoel/branch-name@v1
         env:
@@ -58,7 +55,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and push MASTER
-        if: (${BRANCH_NAME} == 'release')
         id: docker_build
         uses: docker/build-push-action@v2
         with:
